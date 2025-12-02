@@ -286,9 +286,40 @@ num      = num + num
 
  let num1 = 2
 
- num1   = num1++
+ num1   = ++num1
  
  console.log(num1);
+
+
+ let num2 = 2 
+
+ let num3 =num2++
+
+ console.log("num2 : ",num2); // 3
+ console.log("num3 : ",num3); // 2
+
+
+
+
+ let num4 = 2       
+ let num5 = num4++  // 2
+ let num6 = ++num5  // ++num5 = ++2 = 3
+
+ console.log("num4",num4); // 3
+ console.log("num5",num5); // 3
+ console.log("num6",num6); // 3
+
+
+ let num7 = 3
+ let num8 = num7-- // 3
+ let num9 = ++num8 // ++num8 = ++3 = 4
+
+ console.log("num7 : ",num7);  // 2
+ console.log("num8 : ",num8);  // 4
+ console.log("num9 : ",num9);  // 4
+ 
+ 
+ 
  
 
 
@@ -302,11 +333,120 @@ num      = num + num
 
 // 2. assignment operator
 
-// 3. comparision or relational operato
+let num10 = 2
+let additionVal = 10
+
+num10 += additionVal  // num10 = num10 + additionVal
+
+num10 -= additionVal;  
+num10 *= additionVal;  
+num10 /= additionVal;  
+num10 %= additionVal;  
+num10 **= additionVal;  
+
+ console.log(num10);
+ 
+
+// 3. comparision or relational operator
+
+// meaning     syntex       example       result
+
+// lessThen     <             5<3           false
+
+// greaterThen  >             5>5           false
+
+// lessThenEq   <=            5<=5          true
+
+// greaterThenEq  >=          9>=2          true
+
+// loosyTypeEq    ==          5=="5"        true
+
+// strictlyTypeEq ===         5==="5"       false
+
+// loosyNotEq      !=         5!="5"        false
+
+// strictlyNotEq   !==        5!=="5"       true
+
+
+
+// What is the result of 7 < 10?   // true
+
+// What is the result of 15 > 25?  // false
+
+// What is the result of 12 <= 12? // true
+
+// What is the result of 20 >= 5?  // true
+
+// What is the result of 8 == "8"?  // true
+
+// What is the result of 9 === "9"? // false
+
+// What is the result of 10 != "10"? // false
+
+// What is the result of 14 !== "14"? // true
+
+// What is the result of 3 + 7 > 12? // false 
+
+// What is the result of 5 * 2 == "10"? // true
+
+// What is the result of 30 / 3 !== 10? // false
+
+// What is the result of 4 + "4" == 8?  // false
+
+console.log(4+"4");
+
 
 // 4. logical operator
 
+// AND  (&&)
+
+// true  true true = true
+// false true true = false
+
+// OR   (||)
+
+// false false false = false
+// true false false  = true
+
+// NOT  (!)
+
+// !(true) = false
+
+
+// (5 > 2 && 10 < 20)   //  true && true = true
+
+// (8 === 8 || 3 > 9);  //  true ||  false = true
+
+// !(7 <= 7)            //  !(true) = false
+
+// (4 !== "4" && 6 > 1) // true && true = true
+
+// (12 < 5 || 9 >= 9);  // false || true = true
+
+// !(3 > 1 && 10 <= 2)  // !(true && false) = !(false) = true
+
+// (15 == "15" && 2 != 2) // true && false =  false
+
+// (20 > 25 || 5 <= 5);  // false || true = true
+
+// !(9 === "9")           // !(false) = true
+
+// (7 >= 2 && 4 < 4)      // true && false = false
+
+// (2 < 1 || 10 === 10);  // false || true = true
+
+// !(6 !== 6 || 8 < 3);   // !(false || false) = !(false) = true
+
+
 // 5. ternary operator
+
+// condition ? console.log("true") : console.log("false")
+
+// let pwd = 0
+
+// pwd ? console.log("home page") : console.log("your password is wrong");
+
+
 
 
 
