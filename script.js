@@ -446,6 +446,213 @@ console.log(4+"4");
 
 // pwd ? console.log("home page") : console.log("your password is wrong");
 
+console.clear()
+
+// concatination (+)
+
+let str1 = "hello"
+
+let str2 = "world"
+
+let final = str1 +" "+ str2
+
+console.log(final);
+
+
+// template litral
+
+let str3 = "welcome"
+let str4 = "javascript"
+
+let finalVal = `${str3} ${str4}`
+
+console.log(finalVal);
+
+// type conversion
+
+// implicit type conversion
+
+let string = "10"
+let number = 10
+
+let total = string+number
+
+console.log(typeof(total));
+
+// string 
+
+// string anything string
+
+console.log(typeof("10"+"10"));
+console.log(typeof("10"+10));
+console.log(typeof("10"+true));
+console.log(typeof("10"+undefined));
+console.log(typeof("10"+null));
+console.log(typeof("10"+[1,2]));
+console.log(typeof("10"+{k:1}));
+
+// number
+
+console.log(typeof(10+"10"));
+console.log(typeof(10+10));
+console.log(typeof(10+true));
+console.log(typeof(10+undefined));
+console.log(typeof(10+null));
+console.log(typeof(10+[1,2]));
+console.log(typeof(10+{q:1}));
+
+// boolean
+
+console.log(typeof(true + "1"));
+console.log(typeof(true + 10));
+console.log(typeof(true + true));
+console.log(typeof(true + undefined));
+console.log(typeof(true + null));
+console.log(typeof(true + [1,2]));
+console.log(typeof(true + {l:1}));
+
+
+
+
+
+
+// explicit type conversion
+
+// Number
+
+console.log(typeof(10+Number("10")));
+
+console.log(Number());
+console.log(Number(""));
+console.log(Number("12"));
+console.log(Number("abc"));
+console.log(Number(12));
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(undefined));
+console.log(Number(null));
+console.log(Number([1,2,3]));
+console.log(Number({k:2}));
+
+
+// Boolean
+
+
+console.log(Boolean());
+console.log(Boolean(""));
+console.log(Boolean("12"));
+console.log(Boolean("abc"));
+console.log(Boolean(12));
+console.log(Boolean(-1));
+console.log(Boolean(0));
+console.log(Boolean(true));
+console.log(Boolean(false));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean([0]));
+console.log(Boolean({l:1}));
+
+
+console.clear();
+
+
+
+// flow control statement
+
+
+// conditional statement
+
+// if statement
+
+// if(condition){
+//  statement
+//}
+
+// condtion is true = allow 
+
+if(5=="5"){
+    console.log("true val"); 
+}
+
+// if else statement
+
+if(5=="5"){
+    console.log("true val");
+    
+}else{
+    console.log("false val");
+    
+}
+
+// else if statement
+
+let hour = 24
+
+if(hour >= 1 && hour <= 6){
+    console.log("good morning");
+    
+}else if(hour >= 7 && hour <= 12){
+    console.log("morning");   
+}else if(hour >= 13 && hour <= 17){
+    console.log("good afternoon");
+    
+}else{
+    console.log("night");
+    
+}
+
+// nested if statement
+
+let age1 = 151
+let height = 155
+let weight = 55
+
+if(age1 >= 18){
+    if(height >= 155){
+        if(weight >= 55){
+            console.log("congratulation ur fit!!!");
+        }else{
+            console.log("your weight is unfit");
+            
+        }
+    }else{
+        console.log("your height is unfit");
+        
+    }
+
+}else{
+    console.log("your age is unfit");
+    
+}
+
+
+// switch statement
+
+// switch(){
+//     case value : statement ; break;
+//     case value : statement ; break;
+//     case value : statement ; break;
+// }
+
+let trafficLight = "red"
+
+switch(trafficLight){
+
+    case "red" : console.log("vechicle stop");break
+    case "yellow" : console.log("vechicle start");break
+    case "green" : console.log("vechicle go");break
+    
+
+}
+
+// looping statement
+
+// for loop
+// while loop
+// do while loop
+// for of loop
+// for in loop
+
 
 
 
