@@ -645,23 +645,250 @@ switch(trafficLight){
 
 }
 
+console.clear();
+
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+console.log(5);
+
+
+
 // looping statement
 
 // for loop
+
+// for(intialiazation;condition ; iteration){
+//     // statement
+// }
+
+console.log("for loop");
+
+
+for(let i = 1 ; i<=5 ; i++){
+console.log(i); // 1 2 3 4 5
+
+}
+
+// let i=1 ; 1<=5 = true ; 1++ = 2
+
+// let i=2 ; 2<=5 = true ; 2++ = 3
+
+// let i=3 ; 3<=5 = true ; 3++ = 4
+
+// let i=4 ; 4<=5 = true ; 4++ = 5
+
+// let i=5 ; 5<=5 = true ; 5++ = 6
+
+// let i=6 ; 6<=5 = false.
+
+console.log("even val");
+
+
+for(let i=1 ; i<=10 ; i++){
+    if(i%2==0){
+        console.log(i);
+        
+    }
+}
+
+
+console.log("while loop");
+
+
 // while loop
+
+// intialiazation
+// while(condition){
+// // statement
+// // iteration
+// }
+
+let val = 5
+
+while(val >= 10){
+
+    console.log(val);
+
+    val--
+    
+    
+}
+
+// 5 ; 5>= 0 = true ; 5 ; 5-- = 4
+
+// 4 ; 4>=0 = true ; 4 ; 4-- = 3
+
+// 3 ; 3>=0 = true ; 3 ; 3-- = 2
+
+// 2 ; 2>=0 = true ; 2 ; 2-- = 1
+
+// 1 ; 1>=0 = true ; 1 ; 1-- = 0
+
+// 0 ; 0>=0 = true ; 0 ; 0-- = -1
+
+// -1 ; -1 >= 0 = false 
+
+
+
+
 // do while loop
+
+// intialiazation
+
+// do{
+//     // statement 
+
+//     // iteration
+// }
+// while(condition)
+
+let val1 = 10
+
+do{
+    console.log(val1);
+
+    val1--
+    
+}
+
+while(val1 >= 0)
+
+
 // for of loop
+
+// string , array , function
+
+let str = "javascript"
+
+for(let a of str){
+    console.log(a);   
+}
+
+let fruit1 = ["apple","orange","banana","graph"]
+
+for(let b of fruit1){
+    console.log(b);
+    
+}
+
 // for in loop
 
+// object
+
+let obj1 = {
+    bigFruit : "water melon",
+    smallFruit : "cherry",
+    middleFruit : "apple"
+}
 
 
+for(let c in obj1){
+ console.log(obj1[c]);
+ 
+}
 
-
-
-
+console.clear();
 
 
 // 3. function
+
+function one1(parameter){
+    // statement
+    console.log("hello");
+    console.log(parameter);
+    
+    
+}
+
+one1("navi")
+
+
+function two1(){
+    console.log("batch22"); 
+    for(let a = 0 ; a<=6 ; a++){
+        console.log(a);
+        
+    }
+
+    if(5){
+        console.log("5");
+        
+    }
+
+}
+
+two1()
+
+
+function clgForm(a,b){
+    console.log("name :", a);
+    console.log("department :", b);
+    
+}
+
+clgForm("kamal","ece")
+clgForm("livin","ece")
+clgForm("praveen","ece")
+
+
+let employee = {
+    name1 : "john",
+    role : "developer"
+}
+
+
+function contact(){
+    console.log(employee.name1);
+    
+}
+
+contact()
+
+console.clear();
+
+// function types
+
+// named function
+
+function named(parameter){
+    console.log("named function");
+    
+}
+
+named("argument")
+
+// Annonymous function
+
+let Annonymous = function(parameter){
+    console.log("Annonymous function");
+    
+}
+
+Annonymous("Argument")
+
+// Arrow Function
+
+let Arrow = (parameter)=>{
+    console.log("Arrow function");
+    
+}
+
+Arrow("Argument")
+
+
+// example only
+
+let h1 = document.querySelector("h1")
+let button = document.querySelector("button")
+
+function three1(){
+    h1.innerText = "welcome"
+}
+
+
+
 
 // 4. date
 
