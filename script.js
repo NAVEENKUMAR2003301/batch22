@@ -1128,6 +1128,178 @@ console.log(add(20));
 
 // NaN
 
+console.clear();
+
+// Es6 edition 
+
+// 1. spread operator
+
+// array , object
+
+// [...],{...}
+
+// we can merge two array or object and we can take clone.
+
+// array 
+
+let first = [1,2,3,4]
+
+let second = [5,6,7,8]
+
+let totalVal = [...first,...second,9,10]
+
+console.log(totalVal);
+
+
+// object
+
+var emp1 = {
+  eName : "john",
+  eRole : "trainee",
+  eSalary : 100000
+}
+
+var emp2 = {
+  eName1 : "paul",
+  eRole2 : "developer",
+  eSalary3 : 500000
+}
+
+let totalObjVal = {...emp1,...emp2,date : 12}
+
+console.log(totalObjVal);
+
+
+
+
+// 2. rest operator
+
+// function
+
+// (...)
+
+// we can multiple argument store in single parameter.
+
+
+function rest(a,b,...c){
+   console.log(a+b);
+   console.log(c[0]);
+   
+   
+}
+
+rest(1,2,3,4,5,6,7)
+
+
+// destracture
+
+// array
+
+let sample = [1,2,3,4]
+
+let array1 = sample[0]
+let array2 = sample[1]
+let array3 = sample[2]
+let array4 = sample[3]
+
+console.log(array1+array4);
+
+
+// destracture : - 
+
+let [c1,c2,c3,c4] = sample
+
+console.log(c1+c4);
+
+// obj
+
+let sample1 = {
+  name1 : "ben",
+  role : "super hero"
+}
+
+
+let {name1,role} = sample1
+
+console.log(name1);
+console.log(role);
+
+
+// nested
+
+let backendData = [1,2,3,[4,5,[6]]]
+
+console.log(backendData[3][2][0]);
+
+let [d1,d2,d3,[d4,d5,[d6]]] = backendData
+
+console.log(d6);
+
+console.clear();
+
+
+
+// advance concept of array
+
+let normal = [1,2,3,4,"hello",true,undefined,null,[1,2,3,true],{l:7}]
+
+console.log(normal[0]);
+console.log(normal[normal.length-1]);
+
+
+// homogeneous
+
+// hetrogeneous
+
+// flexible
+
+
+// array manipulated method
+
+// if you use adding method u can add mulitiple value.
+
+// if you use remove method u can remove only one value.
+
+let random = [1,2,3,4]
+
+// pop() - you can remove last value in array
+
+random.pop()
+
+// push() - you can add last value in array
+random.push(4,5,6,7,8,9)
+
+// shift() - you can remove first value in array
+random.shift()
+
+// unshift() - you can add first value in array
+
+random.unshift(0,1)
+
+console.log(random);
+
+// splice(//SI,DC,AV) 
+
+let random1 = [10,2,3,4,50]
+
+random1.splice(1,3,20,30,40,60)
+
+console.log(random1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // // 4. date
