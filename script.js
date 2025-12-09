@@ -1289,6 +1289,246 @@ console.log(random1);
 
 
 
+// array merge method
+
+
+// concat()
+
+let one = [1,2,3,4]
+
+let two = [5,6,7,8]
+
+let finalVal = one.concat(two)
+
+console.log(finalVal);
+
+
+// slice()
+
+let sample2 = [1,2,"3","4","5",6]
+
+let sliceVal = sample2.slice(2,5)// si, ei
+
+console.log(sliceVal);
+
+
+
+// flat()
+
+let nest = [1,2,[3,4,[5,6,[7,8]]]]
+
+let flatVal = nest.flat(Infinity)
+
+console.log(flatVal);
+
+
+// fill()
+
+let sample3 = [1,2,3,4] // 1,2,3,"four"
+
+sample3.fill("four",3,4) // value, si , ei
+
+console.log(sample3);
+
+
+// indexof()
+
+let sample4 = [1,2,3,4,3,2,1]
+
+let indexofVal = sample4.indexOf(3,3)// value,fromIndex
+
+console.log(indexofVal);
+
+
+// lastIndexOf()
+
+let sample5 = [1,2,3,4,2,1]
+
+let lastIndexOfVal = sample5.lastIndexOf(2,3) // value , fI
+
+console.log(lastIndexOfVal);
+
+
+// sort()
+
+let sample6 = ["A",1,91,"a",61,12,3000,20000,3,2,5,0]
+
+let sortVal = sample6.sort()
+
+console.log(sortVal);
+
+// 2.0000 >= 3 = false 
+
+
+// includes()
+
+let sample7 = [1,2,34,4,5]
+
+let includesVal = sample7.includes(2)
+
+console.log(includesVal);
+
+
+
+console.clear();
+
+
+//  array higherorder method
+
+// forEach()
+
+let games = ["gta","carrom","chess","pubg"]
+
+let forEachVal = games.forEach((current,index,totalArray)=>{
+  return current
+  
+})
+
+console.log(forEachVal);
+
+
+// map()
+
+let mapVal = games.map((cu,ind,tot)=>{
+  return cu
+  
+  
+  
+})
+
+console.log(mapVal);
+
+
+
+
+
+
+// filter()
+
+let emp = [
+  {eName : "a",eSalary : 100000},
+  {eName : "b",eSalary : 200000},
+  {eName : "c",eSalary : 300000},
+  {eName : "d",eSalary : 400000},
+  {eName : "e",eSalary : 500000}
+]
+
+let filterVal = emp.filter((cu,i,tot)=>{
+  return cu.eSalary >= 100000
+})
+
+console.log(filterVal);
+
+
+// find()
+
+let findVal = emp.find((c,i,t)=>{
+return c.eSalary >= 100000
+})
+
+console.log(findVal);
+
+
+// reduce()
+
+emp = [
+  { eName: "a", eSalary: 100000 },
+  { eName: "b", eSalary: 200000 },
+  { eName: "c", eSalary: 300000 },
+  { eName: "d", eSalary: 400000 },
+  { eName: "e", eSalary: 500000 },
+];
+
+
+let reduceVal = emp.reduce((acc,c,i,to)=>{
+  return acc + c.eSalary
+
+  //   0 + 1 = 1
+  //   1 + 2 = 3
+  //   3 + 3 = 6
+  //   6 + 4 = 10
+  //   10 + 5 = 15
+  // r acc + cS = 15 + null =r 15
+},0) // 1 // 3 // 6 // 10 // 15
+
+console.log(reduceVal);
+
+
+// array highorder function method
+
+// sort()
+
+let sample8 = [1,23,2,456,4,654,7,0,111]
+
+let sortVal1 = sample8.sort()
+
+console.log(sortVal1);
+
+
+let sort1 = sample8.sort((a,b)=>{
+return b-a
+})
+
+console.log(sort1);
+
+
+
+
+// some() // logical OR
+
+let sample9 = [1,2,3,4]
+
+let someVal = sample9.some((c,i,t)=>{
+return c%2==1
+// 1%2==1 = true
+// 2%2==1 = false
+// 3%2==1 = true
+// 4%2==1 = false
+
+// true || false || true || false = true 
+})
+
+console.log(someVal);
+
+// every() // logical AND 
+
+let sample10 = [2,2,2,2]
+
+let everyVal = sample10.every((c,i,t)=>{
+return c%2==0
+})
+
+console.log(everyVal);
+
+
+// convert method
+
+// arr --> str 
+
+
+let sample11 = [1,2,3,4]
+
+// join()
+
+let joinVal = sample11.join()
+
+console.log((joinVal));
+
+
+// toString()
+
+let stringVal = sample11.toString()
+
+console.log(stringVal);
+
+
+
+
+
+
+
+
+
 
 
 
