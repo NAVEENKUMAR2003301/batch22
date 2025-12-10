@@ -1522,6 +1522,328 @@ let stringVal = sample11.toString()
 console.log(stringVal);
 
 
+console.clear();
+
+
+
+// String methods
+
+
+  // charAt(), index ---> value
+
+  let str1 = "Javascript"
+
+  let charAtVal = str1.charAt(1)
+
+  console.log(charAtVal);
+  
+
+  // charCodeAt(),
+
+  str1 = "Javascript";
+
+  let charCodeAtVal = str1.charCodeAt(3)
+
+  console.log(charCodeAtVal);
+  
+
+  // length,
+
+  str1 = "Javascript";
+
+  let lengthVal = str1.length
+
+  console.log(lengthVal);
+  
+  // slice(),
+
+  str1 = "javaScripT"
+
+  let sliceVal1 = str1.slice(4,10)
+
+  console.log(sliceVal1);
+  
+
+
+  // toUpperCase(),
+
+   str1 = "javaScripT";
+
+   let upper = str1.toUpperCase()
+
+   console.log(upper);
+   
+
+
+  // toLowerCase(),
+
+   str1 = "javaScripT";
+
+   let lower = str1.toLowerCase()
+
+   console.log(lower);
+   
+  // trim(),
+
+  str1 = " hello "
+
+  let trimVal = str1.trim()
+
+  console.log(trimVal[0]);
+
+  // trimStart()
+
+  console.log(str1.trimStart());
+  
+
+  // trimEnd()
+
+  console.log(str1.trimEnd());
+  
+  
+  // includes(),
+
+   str1 = "javaScripT";
+
+   let includesVal1 = str1.includes("j")
+
+   console.log(includesVal1);
+   
+  // split(),
+
+   str1 = "javaScripT";
+
+   console.log(str1.split());
+
+   str1 = "iron-man"
+
+   console.log(str1.split("-"));
+   
+   
+
+
+  // indexOf(),
+
+    let str2 = "java"
+
+    let indexOf1 = str2.indexOf("a",2)
+
+    console.log(indexOf1);
+
+  // lastIndexOf()
+
+    let str3 = "hello world"
+
+    let lastIndexOfVal11 = str3.lastIndexOf("l",8)
+
+    console.log(lastIndexOfVal11);
+    
+    
+  // replace(),
+
+  let str4 = "python developer"
+
+  let replaceVal = str4.replace("python","javascript") // "python","javascript"
+  console.log(replaceVal);
+
+  // repeat()
+
+   str1 = "javaScripT";
+
+   let repeatVal = str1.repeat(5)
+
+   console.log(repeatVal);
+   
+  
+
+
+  // startsWith(),
+
+   str1 = "javaScripT";
+
+   let start = str1.startsWith("j")
+
+   console.log(start);
+   
+
+
+  // endsWith();
+
+   str1 = "javaScripT";
+
+   let end = str1.endsWith("T")
+
+   console.log(end);
+
+
+   // Date
+
+   let date1 = new Date()
+
+   console.log(date1);
+
+
+   // get
+
+   // year
+
+   let year  = date1.getFullYear()
+
+   console.log(year);
+
+   // month
+
+   let month = date1.getMonth()
+
+   console.log(month);
+
+   // date
+
+   let Date11 = date1.getDate()
+
+   console.log(Date11);
+
+   // day
+
+   let day = date1.getDay()
+
+   console.log(day);
+
+   // hour
+
+   let hour = date1.getHours()
+
+   console.log(hour);
+
+   // minutes
+
+   let minutes = date1.getMinutes()
+
+   console.log(minutes);
+
+   // seconds 
+
+   let seconds = date1.getSeconds()
+
+   console.log(seconds);
+
+
+   // locale string 
+
+   // time 
+
+   let time = date1.toLocaleTimeString()
+
+   console.log(time);
+
+   // date12
+
+   let date12 = date1.toLocaleDateString()
+
+   console.log(date12);
+
+   let timeDate = date1.toLocaleString()
+
+   console.log(timeDate);
+
+
+   console.clear();
+
+
+
+   
+   
+   
+   
+   
+   
+   
+
+
+   
+   
+   
+   
+
+   // set
+
+   let date = new Date()
+
+   console.log(date);
+
+   // year
+
+    date.setFullYear(2003)
+
+   console.log(date);
+
+   // month
+
+   date.setMonth(0)
+
+   console.log(date);
+
+   // date 
+
+   date.setDate(30)
+
+   console.log(date);
+
+   // hours
+
+   date.setHours(9)
+
+   console.log(date);
+
+   // minutes
+
+   date.setMinutes(55)
+
+   console.log(date);
+
+   // seconds 
+
+   date.setSeconds(55)
+
+   console.log(date);
+   
+   
+   console.clear();
+   
+   // birth day day finder
+
+
+   let year22 = prompt("enter your dob Year")
+   let month22  = prompt("enter your dob month (ex.. 1,2)")
+   let date22   = prompt("enter your dob date")
+   
+   
+   let data = new Date()
+
+   data.setFullYear(year22)
+   data.setMonth(month22-1)
+   data.setDate(date22)
+
+   console.log(data);
+
+   let day22 = data.getDay()
+
+   console.log(day22);
+
+   let weeks = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+
+   alert(weeks[day22]);
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+
 
 
 
