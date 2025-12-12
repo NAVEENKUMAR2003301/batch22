@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .active{
+        
+        height: 50px;
+        background-color: aqua;
+        border: 5px solid black;
+        animation: right .2s linear;
+    }
+
+    @keyframes right{
+        0%{
+            transform: translateX(-100px);
+        }
+        100%{
+            transform: translateX(0);
+            background-color: blueviolet;
+        }
+    }
+</style>
 <body>
 
-    <h1>hello</h1>
+    <h1>To do Application</h1>
 
-    <button onclick="three1()">click me</button>
+    <input type="text">
+    <button onclick="save()">Add</button>
+    <ol></ol>
    
-    
-    <script>
-     
-    </script>
+
     <script src="./script.js"></script>
 </body>
 </html>
